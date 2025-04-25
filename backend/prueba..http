@@ -1,0 +1,27 @@
+### Verificar que el servidor funciona
+GET http://localhost:3000/
+
+### Probar ruta de usuarios (GET)
+GET http://localhost:3000/api/usuarios
+
+### Registro de usuario
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "usuario2",
+  "password": "contraseña123",
+  "role": "user"
+}
+
+### Login de usuario (CORRECTO)
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "usuario2",
+  "password": "contraseña123"
+}
+
+
+
